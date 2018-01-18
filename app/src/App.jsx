@@ -3,6 +3,7 @@ import {render} from 'react-dom'
 import {} from './styles/global.css'
 import Logo from './components/Logo.jsx'
 import Link from './components/Link.jsx'
+import Menu from './components/Menu.jsx'
 
 const logos = [
     require('./assets/electron.png'),
@@ -19,7 +20,8 @@ export default class App extends Component {
 
         return (
             <div>
-                {logosRender}
+                <Menu></Menu>
+                {/* {logosRender}
 
                 <div className="hello">
                     <h1>Hello React!</h1>
@@ -47,7 +49,7 @@ export default class App extends Component {
                     you are used to. If you have any issue, please file an issue at this seed's&nbsp;
                     <Link to='https://github.com/pastahito/electron-react-webpack'>
                     repository</Link>.
-                </p>
+                </p> */}
             </div>
         )
     }
